@@ -16,12 +16,13 @@ Perfusion을 관측하기 위해 주로 PET이나 MRI 촬영을 하는데, 이�
 ASL는 조영제 주입 등의 침습적 행위없이 인체 내의 혈액만을 추적자(tracer)로 이용하여 perfusion을 측정한다.
 
 ## How ASL works
-ASL은 일반적으로 두번의 영상을 촬영한다.
-.
-- 혈액에 특정 주파수 펄스를 가하지 않은 영상 (Control image) -> BOLD fMRI와 유사하게 촬영
+ASL은 일반적으로 두번의 영상을 촬영한다.  
+
+- 혈액에 특정 주파수 펄스를 가하지 않은 영상 (Control image)
 - 혈액이 뇌에 도달하기 직전, 주로 목에서 주파수 펄스를 가하여 혈액을 지속적으로 자극 및 종축자화하여 라벨한 영상(Labeling image)  
+  
 이 두 영상의 신호의 차가 perfusion rate에 비례에서 나타나서 뇌 혈류량(Cerebral Blood Flow)을 알 수 있게 된다.  
-![ASL](/assets/images/ASL.PNG){: width="40%"}{: .center} ![ASL_MAP](/assets/images/ASL_MAP.PNG){: width="40%"}{: .center}
+![ASL](/assets/images/ASL.PNG){: width="40%"}{: .center} ![ASL_MAP](/assets/images/ASL_MAP.PNG){: width="40%"}{: .center}  
 
 ASL 혈액에 펄스를 주어 라벨링을 하는 방법에따라 촬영 기법이 다양하지만 최근에는 PCASL(pseudo-continuous ASL) 기법을 많이 사용한다.  
 PCASL이란 연속적인 펄스가 아닌 분리된 펄스(discrete RF)을 사용하여 혈액을 라벨링한다.  
@@ -38,7 +39,7 @@ ASL fMRI는 perfusion rate를 기준으로 뇌활동을 측정한다.
 - ASL 촬영 기법이 시간소요가 더 크다. 하나의 ASL image 촬영하는데 1.2-2.5s, 여러 BOLD images 촬영하는데 500ms.
   따라서 동일한 시간 내로 ASL와 BOLD 촬영시 ASL의 slice 수가 비교적 적게 얻어지고 더 두껍다. 즉, 공간 해상도가 낮음
 
-<img src=/assets/images/ASLvsBOLD.PNG width="40%">
+<img src=/assets/images/ASLvsBOLD.PNG width="40%">  
 fingger tapping 태스크(4m) 수행 영상 분석 비교
 
 
