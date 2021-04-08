@@ -1,0 +1,3 @@
+# fMRI
+
+source: `{{ page.path }}`
