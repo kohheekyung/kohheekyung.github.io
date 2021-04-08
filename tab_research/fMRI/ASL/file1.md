@@ -20,9 +20,8 @@ ASL은 일반적으로 두번의 영상을 촬영한다.
 
 - 혈액에 특정 펄스를 가하지 않은 영상 (Control image)
 - 혈액이 뇌에 도달하기 직전, 주로 목에서 펄스를 가하여 혈액을 지속적으로 자극 및 종축자화하여 라벨한 영상(Labeling image)  
-
 이 두 영상의 신호의 차가 perfusion rate에 비례에서 나타나서 뇌 활동의 정보를 알 수 있게 된다.  
-<img src=/assets/images/ASL.PNG width="40%"> <img src=/assets/images/ASL_MAP.PNG width="40%">  
+<img src=/assets/images/ASL.PNG width="40%">  <img src=/assets/images/ASL_MAP.PNG width="40%">  
 
 ASL 혈액을 라벨링하는 방법에따라 촬영 기법이 다양하지만 최근에는 "pseudo-conditinuous" 기법을 많이 사용하며, 이 문서에서 다루고 있다.
 
