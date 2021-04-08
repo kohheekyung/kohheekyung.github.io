@@ -33,5 +33,5 @@ ASL는 일번적으로 두 번의 영상을 촬영하는데, 첫번째 영상에
 - 따라서 동일한 시간 내로 ASL와 BOLD 촬영시 ASL가 더 적은 slice가 얻어지고 더 두껍다. 공간 해상도가 낮음
 - ASL의 장점으로는 signal이 비교적 노이즈가 적은편이다.
 
-![ASLvsBOLD](https://github.com/kohheekyung/kohheekyung.github.io/tree/main/assets/images/ASLvsBOLD.PNG)
+![ASLvsBOLD] (https://github.com/kohheekyung/kohheekyung.github.io/tree/main/assets/images/ASLvsBOLD.PNG)
 
