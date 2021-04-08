@@ -5,8 +5,8 @@ sort: 1
 # What is fASL?
 
 ## Background
-__Blood flow(혈류)__는 비교적 큰 혈관계에서 혈액의 흐름.  
-__Perfusion(관류)__은 혈액이 조직내 모세혈관까지 전달되어 양분을 공급하는 개념, 보다 미세한 뇌 활동 지표.
+__Blood flow(혈류)__ 는 비교적 큰 혈관계에서 혈액의 흐름.  
+__Perfusion(관류)__ 은 혈액이 조직내 모세혈관까지 전달되어 양분을 공급하는 개념, 보다 미세한 뇌 활동 지표.
 
 Perfusion을 관측하기 위해 주로 PET이나 MRI 촬영을 하는데, 이는 조영제를 체내에 주입하며 특정 조직이나 혈관이 잘보이도록한다.  
 허나, 주사를 사용해 침습적이라는 점과 조영제가 체외로 배출되는데 오래걸려 부작용에 예민한 환자가 있으며,  
@@ -24,7 +24,7 @@ ASL은 일반적으로 두번의 영상을 촬영한다.
 이 두 영상의 신호의 차가 perfusion rate에 비례에서 나타나서 뇌 혈류량(Cerebral Blood Flow)을 알 수 있게 된다.  
 ![ASL](/assets/images/tab_research/fMRI/ASL/file1/ASL.PNG){: width="40%"}{: .center} ![ASL_MAP](/assets/images/tab_research/fMRI/ASL/file1/ASL_MAP.PNG){: width="40%"}{: .center}  
 
-ASL 혈액에 펄스를 주어 라벨링을 하는 방법에따라 촬영 기법이 다양하지만 최근에는 __PCASL(pseudo-continuous ASL) 기법__을 많이 사용한다.  
+ASL 혈액에 펄스를 주어 라벨링을 하는 방법에따라 촬영 기법이 다양하지만 최근에는 __PCASL(pseudo-continuous ASL)기법__ 을 많이 사용한다.  
 PCASL이란 연속적인 펄스가 아닌 분리된 펄스(discrete RF)을 사용하여 혈액을 라벨링한다.  
 따라서 별도의 연속적 경사자기장을 분리된 경사자기장으로 체하여 추가적 장치없이 일반적인 MRI 시스템의 경사자기장과 주파수 펄스로 촬영이 가능하다.
 
