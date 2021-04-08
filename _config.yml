@@ -29,3 +29,6 @@ exclude:
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://kohheekyung.github.io/" # the base hostname & protocol for your site
