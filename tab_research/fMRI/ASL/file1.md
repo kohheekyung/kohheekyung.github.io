@@ -39,7 +39,7 @@ ASL fMRI는 perfusion rate를 기준으로 뇌활동을 측정한다.
 - ASL 촬영 기법이 시간소요가 더 크다. 하나의 ASL image 촬영하는데 1.2-2.5s, 여러 BOLD images 촬영하는데 500ms.
   따라서 동일한 시간 내로 ASL와 BOLD 촬영시 ASL의 slice 수가 비교적 적게 얻어지고 더 두껍다. 즉, 공간 해상도가 낮음
 
-<img src=/assets/images/ASLvsBOLD.PNG width="40%">  
+![ASL_MAP](/assets/images/ASLvsBOLD.PNG){: width="40%"}  
 fingger tapping 태스크(4m) 수행 영상 분석 비교
 
 
