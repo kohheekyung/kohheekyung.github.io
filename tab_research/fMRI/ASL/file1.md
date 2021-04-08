@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# fASL Tutorial #1: Background
+# fASL Background
 
 Blood flow(혈류)는 비교적 큰 혈관계에서 혈액의 흐름.
 perfusion(관류)는 혈액이 조직내 모세혈관까지 전달되어 양분을 공급하는 개념, 보다 미세한 뇌 활동 지표.
@@ -14,7 +14,7 @@ perfusion을 관측하기 위해 주로 PET이나 MRI 촬영을 하는데, 이�
 ASL은 일반적의 두번의 영상을 촬영한다.
 - 혈액에 특정 펄스를 가하지 않은 영상 (Control image)
 - 혈액이 뇌에 도달하기 직전, 주로 목에서 펄스를 가하여 혈액을 지속적으로 자극 및 종축자화하여 라벨한 영상(Labeling image) 
-![ASLvsBOLD](/assets/images/ASL.PNG)
+![ASLvsBOLD](/assets/images/ASL.PNG) <img src=/assets/images/ASL.PNG width="40%">
 
 
 
