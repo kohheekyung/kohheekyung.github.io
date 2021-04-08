@@ -14,8 +14,9 @@ perfusion을 관측하기 위해 주로 PET이나 MRI 촬영을 하는데, 이�
 ASL은 일반적의 두번의 영상을 촬영한다.
 - 혈액에 특정 펄스를 가하지 않은 영상 (Control image)
 - 혈액이 뇌에 도달하기 직전, 주로 목에서 펄스를 가하여 혈액을 지속적으로 자극 및 종축자화하여 라벨한 영상(Labeling image) 
-<img src=/assets/images/ASL.PNG width="40%">
-
+<img src=/assets/images/ASL.PNG width="40%">  
+이 두 영상의 신호의 차가 perfusion 정도에 비례에서 나타나서 뇌 활동의 정보를 알 수 있게 된다.
+<img src=/assets/images/ASL_MAP.PNG width="40%">  
 
 
 
