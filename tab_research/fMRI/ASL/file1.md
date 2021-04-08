@@ -21,7 +21,7 @@ ASL은 일반적으로 두번의 영상을 촬영한다.
 - 혈액에 특정 주파수 펄스를 가하지 않은 영상 (Control image) -> BOLD fMRI와 유사하게 촬영
 - 혈액이 뇌에 도달하기 직전, 주로 목에서 주파수 펄스를 가하여 혈액을 지속적으로 자극 및 종축자화하여 라벨한 영상(Labeling image)  
 이 두 영상의 신호의 차가 perfusion rate에 비례에서 나타나서 뇌 혈류량(Cerebral Blood Flow)을 알 수 있게 된다.  
-![ASL](/assets/images/ASL.PNG){: width="40%"){: .center} ![ASL_MAP](/assets/images/ASL_MAP.PNG){: width="40%"){: .center}
+![ASL](/assets/images/ASL.PNG){: width="40%"}{: .center} ![ASL_MAP](/assets/images/ASL_MAP.PNG){: width="40%"}{: .center}
 
 ASL 혈액에 펄스를 주어 라벨링을 하는 방법에따라 촬영 기법이 다양하지만 최근에는 PCASL(pseudo-continuous ASL) 기법을 많이 사용한다.  
 PCASL이란 연속적인 펄스가 아닌 분리된 펄스(discrete RF)을 사용하여 혈액을 라벨링한다.  
