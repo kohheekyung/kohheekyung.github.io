@@ -1,3 +1,3 @@
-# ASL fMRI analysis
+# ASL analysis
 
 source: `{{ page.path }}`
