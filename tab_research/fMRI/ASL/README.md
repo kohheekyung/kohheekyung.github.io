@@ -1,3 +1,4 @@
 # ASL analysis
 
-source: `{{ page.path }}`
+출처
+https://andysbrainbook.readthedocs.io/en/latest/ASL/ASL_Techniques.html?highlight=asl
