@@ -2,10 +2,9 @@
 sort: 1
 ---
 
-# What is fASL
+# What is fASL?
 
-
-### Background
+## Background
 Blood flow(혈류)는 비교적 큰 혈관계에서 혈액의 흐름.
 perfusion(관류)는 혈액이 조직내 모세혈관까지 전달되어 양분을 공급하는 개념, 보다 미세한 뇌 활동 지표.
 
@@ -15,7 +14,7 @@ perfusion을 관측하기 위해 주로 PET이나 MRI 촬영을 하는데, 이�
 이러한 한계로 ASL(동맥 스핀 라벨링; Arterial spin labeling) fMRI를 사용힐 수 있다.  
 ASL는 조영제 주입 없이 인체 내의 혈액만을 이용하여 perfusion을 측정한다.
 
-### ASL
+## ASL
 ASL은 일반적의 두번의 영상을 촬영한다.
 - 혈액에 특정 펄스를 가하지 않은 영상 (Control image)
 - 혈액이 뇌에 도달하기 직전, 주로 목에서 펄스를 가하여 혈액을 지속적으로 자극 및 종축자화하여 라벨한 영상(Labeling image)  
@@ -31,7 +30,7 @@ ASL는 일번적으로 두 번의 영상을 촬영하는데, 첫번째 영상에
 그 중 PCASL(pseudo-conditinuous ASL)은 (주로 목)
 
 
-### ASL vs. BOLD fMRI
+## ASL vs. BOLD fMRI
 두 방법 모두 뇌 활동을 측정하지만, 몇몇의 차이가 있다. 
 
 간단하게, BOLD fMRI는 뇌영역의 혈액 내 산소량의 변화신호(BOLD)가 뇌 활동(neural firing)과 관련이 있다는 점을 이용한 것이고, 
