@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# Research
+# Develope method
 
 ```
 {% raw %}{% include list.liquid all=true %}{% endraw %}
