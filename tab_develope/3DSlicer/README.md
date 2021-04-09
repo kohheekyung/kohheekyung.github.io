@@ -2,6 +2,6 @@
 sort: 1
 ---
 
-# 3D Slcier
+# 3D Slicer  
 
 {% include list.liquid all=true %}
