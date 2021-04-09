@@ -9,8 +9,7 @@ C++ 윈도우 개발환경 기준
   
   
 
-### Extension Wizard  
-Extension 템플릿 생성  
+### Extension Wizard 템플릿 생성  
   
  1. 3D Slicer 실행
  2. Extension Wizard 모듈 선택
