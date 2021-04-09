@@ -2,12 +2,5 @@
 sort: 1
 ---
 
-# Develope Method
-
-```
-{% raw %}{% include list.liquid all=true %}{% endraw %}
-
-{% include list.liquid all=true %}
-```
-
+# Develope Method  
 {% include list.liquid all=true %}
