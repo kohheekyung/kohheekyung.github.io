@@ -22,8 +22,8 @@
 ### 3d Slicer API 받기  
 
 1. [3dSlicer](http://slicer.kitware.com) 회원가입  
-2. [NA-MIC community](https://slicer.kitware.com/midas3/community/23) 가서 _Join Community_ 클릭
-3. My Account가서 API 탭 클릭
+2. [NA-MIC community](https://slicer.kitware.com/midas3/community/23) 가서 _Join Community_ 클릭  
+3. My Account가서 API 탭 클릭  
 4. Default가 Application Name인 API Key 긁어서 환경변수에 저장  
    _API Key에 /가 들어가있으면 build가 안되는 issue가 발생하기때문에 해당 Key를 delete하고 regenerate하여 발급받는다_
    
@@ -38,9 +38,12 @@
 
 1. 3d Slicer 소스 받아오기  
   다운받고자 하는 폴더에서 오른쪽 클릭하여 _Git Bash here_ 선택 후
-  \'git clone https://github.com/Slicer/Slicer.git \' 입력  
-2.  
-
+  \'git clone https://github.com/Slicer/Slicer.git\' 입력  
+2. CMake로 빌드(CMD 이용)  
+   
 #### Release
+
+
+
 #### Debug
 
