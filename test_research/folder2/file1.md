@@ -20,10 +20,11 @@
 참고 https://slicer.readthedocs.io/en/latest/developer_guide/build_instructions/windows.html#install-prerequisites      
  
 ### 3d Slicer API 받기  
-
+Contribution 하지않는다면 생략가능    
+  
 1. [3dSlicer](http://slicer.kitware.com) 회원가입  
-2. [NA-MIC community](https://slicer.kitware.com/midas3/community/23) 가서 _Join Community_ 클릭  
-3. My Account가서 API 탭 클릭  
+2. [NA-MIC community](https://slicer.kitware.com/midas3/community/23) 가서 _Join Community_ 클릭
+3. My Account가서 API 탭 클릭
 4. Default가 Application Name인 API Key 긁어서 환경변수에 저장  
    _API Key에 /가 들어가있으면 build가 안되는 issue가 발생하기때문에 해당 Key를 delete하고 regenerate하여 발급받는다_
    
@@ -38,12 +39,23 @@
 
 1. 3d Slicer 소스 받아오기  
   다운받고자 하는 폴더에서 오른쪽 클릭하여 _Git Bash here_ 선택 후
-  \'git clone https://github.com/Slicer/Slicer.git\' 입력  
-2. CMake로 빌드(CMD 이용)  
+  \'git clone https://github.com/Slicer/Slicer.git \' 입력  
+2. CMD 창에서 cmake 빌드  
+   명령어에서 설정되는 경로는 환경에 맞게 변경.  
    
 #### Release
-
-
-
+```
+mkdir D:\Slicer_r  #build 디렉토리 생성
+cd D:\Slicer_r       #build 디렉토리 이동
+cmake -G "Visual Studio 16 2019" -DQt5_DIR:PATH=D:\LIBRARY\Qt5\5.15.0\msvc2019_64\lib\cmake\Qt5 D:\Slicer
+cmake --build . --config Release
+``` 
 #### Debug
+```
+mkdir D:\Slicer_d  #build 디렉토리 생성
+cd D:\Slicer_d       #build 디렉토리 이동
+cmake -G "Visual Studio 16 2019" -DQt5_DIR:PATH=D:\LIBRARY\Qt5\5.15.0\msvc2019_64\lib\cmake\Qt5 D:\Slicer
+cmake --build . --config Debug  
+``` 
+### 
 
