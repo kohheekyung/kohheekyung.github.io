@@ -50,12 +50,21 @@ cd D:\Slicer_r       #build 디렉토리 이동
 cmake -G "Visual Studio 16 2019" -DQt5_DIR:PATH=D:\LIBRARY\Qt5\5.15.0\msvc2019_64\lib\cmake\Qt5 D:\Slicer
 cmake --build . --config Release
 ``` 
-##### Debug
+##### Debug (오래걸림)
 ```
 mkdir D:\Slicer_d  #build 디렉토리 생성
 cd D:\Slicer_d       #build 디렉토리 이동
 cmake -G "Visual Studio 16 2019" -DQt5_DIR:PATH=D:\LIBRARY\Qt5\5.15.0\msvc2019_64\lib\cmake\Qt5 D:\Slicer
 cmake --build . --config Debug  
 ``` 
-### 
 
+##### 3d Slicer 실행  
+
+1. build 디렉토리의 가장 상위에서 Slicer.sln 찾아 visual studio 실행  
+2. active configuration을 빌드한 설정에 맞게 변경 Debug or Release  
+3. ALL_BUID 프로젝트 빌드  
+4. build 디렉토리/Slicer-build/Slicer.exe 클릭  
+
+### 3d Slicer Extension Module 만들기  
+1. 3D Slicer 실행하여 Extension Wizard Module 선택 
+2. Create Extension 선택
