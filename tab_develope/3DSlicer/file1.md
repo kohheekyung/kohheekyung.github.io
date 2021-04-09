@@ -1,6 +1,6 @@
 ---
 sort: 1
----
+---  
 # 1. 3D Slicer 개발환경 구축
 
 3D Slicer에 Extension Module 개발하기  
@@ -38,9 +38,9 @@ Contribution 하지않는다면 생략가능
 4. Default가 Application Name인 API Key 긁어서 환경변수에 저장  
    _API Key에 /가 들어가있으면 build가 안되는 issue가 발생하기때문에 해당 Key를 delete하고 regenerate하여 발급받는다_
    
-   MIDAS_PACKAGE_EMAIL 에는 3d Slicer 계정 이메딜
+   MIDAS_PACKAGE_EMAIL 에는 3d Slicer 계정 이메일  
    MIDAS_PACKAGE_API_KEY 에는 발급받은 API Key  
-   
+![vs2019](/assets/images/tab_develope/3DSlicer/file1/sysPATH.PNG){: width="40%"}{: .center} 
   _환경변수 반영은 cmd창을 켜서 set 명령어를 치거나 재부팅을 하면 됨_
 
 참조 https://www.slicer.org/wiki/Documentation/Nightly/Developers/FAQ/Extensions#How_to_obtain_an_API_key_to_submit_on_the_extension_server_.3F  
