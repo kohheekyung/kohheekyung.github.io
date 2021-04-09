@@ -20,4 +20,4 @@ C++ 윈도우 개발환경 기준
   -  Name: 모듈명 
   -  Type: loadable (default: scripted는 파이썬)   
  5.  Destination에 입력한 경로에서 프로젝트 확인  
-![extension_result]()
+![extension_result](/assets/images/tab_develope/3DSlicer/file2/extension_resultPNG){: width="70%"}
