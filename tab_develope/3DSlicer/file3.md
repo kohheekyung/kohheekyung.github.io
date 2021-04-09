@@ -5,13 +5,25 @@ sort: 3
 # 3. CMake
 
 CMakeLists.txt 이해하고, CMake로 Extension 프로젝트 빌드하기  
-Extension Wizard로 템플릿을 생성하면 최상위 폴더와 각 모듈들에 CMakeLists.txt가 생성된다
 
+### CMake란  
+CMake란 다양한 빌드 도구 중 하나이다.
+
+
+
+### CMakeLists.txt 규칙  
+
+1. CMake로 빌드하기위한 source file의 경로 최상위 폴더 안에 CMakeList.txt가 있어야한다.  
+2. 이 CmakeList.txt에서 프로젝트명(\`project(프로젝트명)\`)과 하위 폴더(\`add_subdiretory(모듈명)\`)목록들을 설정해야한다.
+3. 하위 폴더에도 .cpp와 같은 source file과 CMakeLists.txt가 있어야한다.  
+4. 이 CMakeLists.txt에는 source file목록들을 설정해주어야한다.  
+
+Extension Wizard로 템플릿을 생성하면 최상위 폴더와 각 모듈들에 CMakeLists.txt가 생성된다
 ### 최상위 폴더의 CMakeLists.txt 
 ```
-cmake_minimum_required(VERSION 3.13.4)
+cmake_minimum_required(VERSION 3.13.4) # 최소 CMake 버전
 
-project(Extension)
+project(Extension) #
 
 #-----------------------------------------------------------------------------
 # Extension meta-information
