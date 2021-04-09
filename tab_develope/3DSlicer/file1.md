@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# 3D Slicer Extension  
+# 1. 3D Slicer Extension  
 
 3D Slicer에 Extension Module 개발하기  
 (C++ 윈도우 개발환경 기준)    
