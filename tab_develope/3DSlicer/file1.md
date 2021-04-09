@@ -1,12 +1,12 @@
 ---
 sort: 1
 ---
-
-# 1. 3D Slicer Extension  
+# 1. 3D Slicer 개발환경 구축
 
 3D Slicer에 Extension Module 개발하기  
-(C++ 윈도우 개발환경 기준)    
+C++ 윈도우 개발환경 기준   
 
+---
 ### 개발환경 
 
  1. [CMake (>=3.15.1)](https://cmake.org/download/)  
@@ -27,7 +27,8 @@ sort: 1
 ![vs2019](/assets/images/tab_develope/3DSlicer/file1/vs2019.PNG){: width="70%"}{: .center}  
     
 참고 https://slicer.readthedocs.io/en/latest/developer_guide/build_instructions/windows.html#install-prerequisites      
- 
+
+---
 ### API 받기  
 Contribution 하지않는다면 생략가능    
   
@@ -42,8 +43,9 @@ Contribution 하지않는다면 생략가능
    
   _환경변수 반영은 cmd창을 켜서 set 명령어를 치거나 재부팅을 하면 됨_
 
-참고 https://www.slicer.org/wiki/Documentation/Nightly/Developers/FAQ/Extensions#How_to_obtain_an_API_key_to_submit_on_the_extension_server_.3F  
+참조 https://www.slicer.org/wiki/Documentation/Nightly/Developers/FAQ/Extensions#How_to_obtain_an_API_key_to_submit_on_the_extension_server_.3F  
 
+---
 ### Build  
 
 1. 3d Slicer 소스 받아오기  
@@ -74,7 +76,3 @@ cmake --build . --config Debug
 ![active_build](/assets/images/tab_develope/3DSlicer/file1/active_build.PNG){: width="60%"}{: center}  
 3. ALL_BUID 프로젝트 빌드
 4. build 디렉토리/Slicer-build/Slicer.exe 클릭  
-
-### Extension Module 만들기  
-1. 3D Slicer 실행하여 Extension Wizard Module 선택 
-2. Create Extension 선택
