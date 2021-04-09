@@ -43,14 +43,14 @@ Contribution 하지않는다면 생략가능
 2. CMD 창에서 cmake 빌드  
    명령어에서 설정되는 경로는 환경에 맞게 변경.  
    
-#### Release
+##### Release
 ```
 mkdir D:\Slicer_r  #build 디렉토리 생성
 cd D:\Slicer_r       #build 디렉토리 이동
 cmake -G "Visual Studio 16 2019" -DQt5_DIR:PATH=D:\LIBRARY\Qt5\5.15.0\msvc2019_64\lib\cmake\Qt5 D:\Slicer
 cmake --build . --config Release
 ``` 
-#### Debug
+##### Debug
 ```
 mkdir D:\Slicer_d  #build 디렉토리 생성
 cd D:\Slicer_d       #build 디렉토리 이동
