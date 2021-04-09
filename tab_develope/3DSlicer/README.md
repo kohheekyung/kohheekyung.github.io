@@ -1,13 +1,7 @@
 ---
-sort: 2
+sort: 1
 ---
 
-# Research Method
-
-```
-{% raw %}{% include list.liquid all=true %}{% endraw %}
-
-{% include list.liquid all=true %}
-```
+# 3D Slcier
 
 {% include list.liquid all=true %}
