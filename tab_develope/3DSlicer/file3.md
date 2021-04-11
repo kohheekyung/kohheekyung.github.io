@@ -21,7 +21,15 @@ A[main] -- C[help.o]
     D -- F[main.h]
     E -- G[help.h]
 ```
-
+```mermaid
+graph RL
+A[main.h] -- B[main.c]
+C[help.h] -- D[help.c]
+    B -- D[main.o]
+    C -- E[help.o]
+    D -- F[main]
+    E -- F
+```
 ```
 #main 프로젝트 생성  
 gcc -c main.c  #목적파일 main.o 생성
