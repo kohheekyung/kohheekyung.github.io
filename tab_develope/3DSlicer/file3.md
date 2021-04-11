@@ -25,10 +25,10 @@ A[main] --> C[help.o]
 graph RL
 A[main.h] --> B[main.c]
 C[help.h] --> D[help.c]
-    B --> D[main.o]
-    C --> E[help.o]
-    D --> F[main]
-    E --> F
+    B --> E[main.o]
+    D --> F[help.o]
+    E --> G[main]
+    F --> G
 ```
 ```
 #main 프로젝트 생성  
