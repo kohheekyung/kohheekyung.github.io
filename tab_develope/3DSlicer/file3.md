@@ -22,7 +22,7 @@ A[main] --> C[help.o]
     E --> G[help.h]
 ```
 ```mermaid
-graph RL
+graph LR
 A[main.h] --> B[main.c]
 C[help.h] --> D[help.c]
     B --> E[main.o]
