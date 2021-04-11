@@ -14,21 +14,21 @@ CMakeLists.txt 이해하고, CMake로 Extension 프로젝트 빌드하기
 __GCC 빌드 예시__  
 ```mermaid
 graph RL
-A[main] -- B[main.o]
-A[main] -- C[help.o]
-    B -- D[main.c]
-    C -- E[help.c]
-    D -- F[main.h]
-    E -- G[help.h]
+A[main] --> B[main.o]
+A[main] --> C[help.o]
+    B --> D[main.c]
+    C --> E[help.c]
+    D --> F[main.h]
+    E --> G[help.h]
 ```
 ```mermaid
 graph RL
-A[main.h] -- B[main.c]
-C[help.h] -- D[help.c]
-    B -- D[main.o]
-    C -- E[help.o]
-    D -- F[main]
-    E -- F
+A[main.h] --> B[main.c]
+C[help.h] --> D[help.c]
+    B --> D[main.o]
+    C --> E[help.o]
+    D --> F[main]
+    E --> F
 ```
 ```
 #main 프로젝트 생성  
