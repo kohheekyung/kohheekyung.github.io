@@ -6,10 +6,10 @@ sort: 3
 
 CMakeLists.txt 이해하고, CMake로 Extension 프로젝트 빌드하기  
 
-### 빌드 과정
-인간이 이해하는 명령어의 조합인 소스파일(*.cpp)을 컴퓨터가 이해하는 기계어의 목적파일(*.o)로 변환한다. __컴파일__ 
-일반적으로 하나의 프로그램은 여러 개의 목적파일들과 라이브러리들의 조합으로 이루어지는데, 이 파일들을 연결시키는 작업을 통해, __링크__ 
-실행가능한 파일(*.exe, *.out 등)을 생성한다. __빌드__ 
+### 빌드 과정  
+인간이 이해하는 명령어의 조합인 소스파일(*.cpp)을 컴퓨터가 이해하는 기계어의 목적파일(*.o)로 변환한다. __컴파일__  
+일반적으로 하나의 프로그램은 여러 개의 목적파일들과 라이브러리들의 조합으로 이루어지는데, 이 파일들을 연결시키는 작업을 통해, __링크__   
+실행가능한 파일(*.exe, *.out 등)을 생성한다. __빌드__  
 
 __GCC 빌드 예(리눅스)__  
 ```
@@ -25,44 +25,60 @@ gcc -o main main.c help.c # 실행파일 main.out 생성
 
 ```mermaid
 graph TD;
-    main-->main.o;
-    main-->help.o;
-    main.o-->main.c;
-    main.o-->help.c;
-    help.o-->help.c;
-    help.o-->help.c;
+    main<--main.o;
+    main<--help.o;
+    main.o<--main.c;
+    main.o<--help.c;
+    help.o<--help.c;
+    help.o<--help.c;
+    main.c<--main.h;
+    help.c<--help.h;
+    
 ```  
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 ### Make란  
-오래걸리고 반복되는 컴파일 작업을 간소화하기 위한 빌드 도구 
-빌드때마다 도구로 파일간 관계를 일일히 설정해줄 필요가 없으며  
-수정된 파일만 컴파일 할 수 있어서 컴파일 과정이 간단해지며, 대규모 프로젝트에 필수적이다.  
+소스파일이 많아졌을 때 오래걸리고 반복되는 컴파일 작업을 간소화하기 위한 빌드 도구 
+빌드때마다 파일간 관계를 일일히 설정해줄 필요가 없으며  
+수정된 파일만 컴파일 할 수 있어서 과정이 간단해지며, 대규모 프로젝트에 필수적이다.  
 
 Makefile에 실행 파일을 만들기 위해 필요한 파일들의 관계를 서술해놓고  
 Make 명령어로 간단하게 실행 파일을 만들어 준다.  
 
-__Makefile 규칙__  
+##### Makefile 규칙__  
 Target(대상파일) : Dependency(의존파일)
                  Command(명령어)  
-```  
-#main 프로젝트 생성  
+
+Makefile 파일 생성
+```   
+$vi Makefile
 main: main.o copy.o 
       gcc -o main main.o help.o 
 main.o: main.c help.h
       gcc -c main.c 
 help.o: help.c help.h
       gcc -c help.c 
+clean:
+      rm *.o main
+     
+```  
+Makefile이 있는 터미널 창에 make or make main 명령어 입력 시
+```  
+$ make
+gcc -c main.c 
+gcc -c help.c 
+gcc -o main main.o help.o 
+```  
+help.c만 수정 후 make or make main 명령어 입력 시
+```  
+$ make 
+gcc -c help.c 
+gcc -o main main.o help.o 
+```  
+모드 목적 파일 *.o와 실행파일제거
+```  
+$ make clean
 ```  
 
-
+##### Makefile 매크로 사용예__  
 
 ### CMake란  
 CMake란 다양한 빌드 도구 중 하나이다.
