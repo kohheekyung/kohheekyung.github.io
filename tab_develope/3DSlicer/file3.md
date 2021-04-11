@@ -11,7 +11,17 @@ CMakeLists.txt 이해하고, CMake로 Extension 프로젝트 빌드하기
 일반적으로 하나의 프로그램은 여러 개의 목적파일들과 라이브러리들의 조합으로 이루어지는데, 이 파일들을 연결시키는 작업을 통해, __링크__   
 실행가능한 파일(*.exe, *.out 등)을 생성한다. __빌드__  
 
-__GCC 빌드 예__  
+__GCC 빌드 예시__  
+```mermaid
+graph RL
+A[main] -->B[main.o]
+A[main] -->C[help.o]
+    B --> D[main.c]
+    C --> E[help.c]
+    D --> F[main.h]
+    E --> G[help.h]
+```
+
 ```
 #main 프로젝트 생성  
 gcc -c main.c  #목적파일 main.o 생성
@@ -21,22 +31,7 @@ gcc -o main main.o help.o # 목적파일간 관계설정 후 실행파일 main.o
 혹은
 ```
 gcc -o main main.c help.c # 실행파일 main.out 생성
-```  
-
-```mermaid
-graph LR
-    main -- main.o & help.o -- main.c & help.c -- main.h & help.h;    
-```  
-
-```mermaid
-graph LR
-A[main] -->B[main.o]
-A[main] -->C[help.o]
-    B --> D[main.c]
-    C --> E[help.c]
-    D --> F[main.h]
-    E --> G[help.h]
-```
+```   
 
 ### Make란  
 소스파일이 많아졌을 때 오래걸리고 반복되는 컴파일 작업을 간소화하기 위한 빌드 도구 
