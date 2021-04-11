@@ -27,6 +27,17 @@ gcc -o main main.c help.c # 실행파일 main.out 생성
 graph LR
     main -- main.o & help.o -- main.c & help.c -- main.h & help.h;    
 ```  
+
+```mermaid
+graph LR
+A[main] -->B[main.o]
+A[main] -->C[help.o]
+    B --> D[main.c]
+    C --> E[help.c]
+    D --> F[main.h]
+    E --> G[help.h]
+```
+
 ### Make란  
 소스파일이 많아졌을 때 오래걸리고 반복되는 컴파일 작업을 간소화하기 위한 빌드 도구 
 빌드때마다 파일간 관계를 일일히 설정해줄 필요가 없으며  
