@@ -21,7 +21,7 @@ gcc -o main main.o help.o # 목적파일간 관계설정 후 실행파일 main.o
 혹은
 ```
 gcc -o main main.c help.c # 실행파일 main.out 생성
-```
+```  
 
 ```mermaid
 graph TD;
@@ -31,6 +31,14 @@ graph TD;
     main.o-->help.c;
     help.o-->help.c;
     help.o-->help.c;
+```  
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
 
 ### Make란  
