@@ -36,8 +36,8 @@ graph TD;
 Makefile에 실행 파일을 만들기 위해 필요한 파일들의 관계를 서술해놓고  
 Make 명령어로 간단하게 실행 파일을 만들어 준다.  
 
-##### Makefile 규칙__  
-Target(대상파일) : Dependency(의존파일)
+##### Makefile 규칙  
+Target(대상파일) : Dependency(의존파일)  
                  Command(명령어)  
 
 Makefile 파일 생성
