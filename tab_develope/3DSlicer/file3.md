@@ -25,15 +25,8 @@ gcc -o main main.c help.c # 실행파일 main.out 생성
 
 ```mermaid
 graph TD;
-    main<--main.o;
-    main<--help.o;
-    main.o<--main.c;
-    main.o<--help.c;
-    help.o<--help.c;
-    help.o<--help.c;
-    main.c<--main.h;
-    help.c<--help.h;
-    
+    main--main.o--main.c--main.h;
+    main--help.o--help.c--help.h;    
 ```  
 ### Make란  
 소스파일이 많아졌을 때 오래걸리고 반복되는 컴파일 작업을 간소화하기 위한 빌드 도구 
@@ -98,9 +91,9 @@ clean:
       rm *.o $(TARGET) 
 ```   
 __내부 매크로 사용시__ 
-$@ - 현재 타겟명
-$^ - 현재 타겟의 종속명 리스트
-all은 타겟이 여러개일때 유용하다
+$@ - 현재 타겟명  
+$^ - 현재 타겟의 종속명 리스트  
+all은 타겟이 여러개일때 유용하다  
 ```   
 $vi Makefile 
 CC = gcc 
