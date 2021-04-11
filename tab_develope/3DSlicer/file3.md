@@ -11,7 +11,7 @@ CMakeLists.txt 이해하고, CMake로 Extension 프로젝트 빌드하기
 일반적으로 하나의 프로그램은 여러 개의 목적파일들과 라이브러리들의 조합으로 이루어지는데, 이 파일들을 연결시키는 작업을 통해, __링크__   
 실행가능한 파일(*.exe, *.out 등)을 생성한다. __빌드__  
 
-__GCC 빌드 예(리눅스)__  
+__GCC 빌드 예__  
 ```
 #main 프로젝트 생성  
 gcc -c main.c  #목적파일 main.o 생성
@@ -78,7 +78,42 @@ gcc -o main main.o help.o
 $ make clean
 ```  
 
-##### Makefile 매크로 사용예__  
+##### Makefile 매크로 사용  
+매크로란 중복되는 파일명들을 특정 단어로 치환하는 것.  (:, =, #, "" 등은 매크로명으로 사용할 수 없다.)  
+매크로 사용시 $(매크로명), %{매크로명}으로 선언한다.  
+```   
+$vi Makefile 
+CC = gcc 
+CFLAGS = -W -WALL # 오류 출력 옵션
+TARGET = main
+OBJECTS = main.o help.o 
+
+$(TARGET): $(OBJECTS)
+      $(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS)
+main.o: main.c help.h
+      $(CC) $(CFLAGS) -c main. c 
+help.o: help.c help.h
+      $(CC) $(CFLAGS) -c help.c 
+clean:
+      rm *.o $(TARGET) 
+```   
+__내부 매크로 사용시__ 
+$@ - 현재 타겟명
+$^ - 현재 타겟의 종속명 리스트
+all은 타겟이 여러개일때 유용하다
+```   
+$vi Makefile 
+CC = gcc 
+CFLAGS = -W -WALL # 오류 출력 옵션
+TARGET = main
+OBJECTS = main.o help.o
+
+all :  $(TARGET)
+$(TARGET): $(OBJECTS)
+      $(CC) $(CFLAGS) -o $@ $6
+clean:
+      rm *.o $(TARGET) 
+```   
 
 ### CMake란  
 CMake란 다양한 빌드 도구 중 하나이다.
