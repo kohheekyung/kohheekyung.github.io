@@ -189,7 +189,7 @@ set(MODULE_TITLE ${MODULE_NAME})
 string(TOUPPER ${MODULE_NAME} MODULE_NAME_UPPER)
 
 #-----------------------------------------------------------------------------
-# module의 구성요소 추가
+# module의 구성요소 디렉토리 추가
 add_subdirectory(Logic)
 add_subdirectory(Widgets)
 
@@ -231,7 +231,7 @@ set(MODULE_RESOURCES
 
 #-----------------------------------------------------------------------------
 # Slicer/CMake/SlicerMacroBuildLoadableModule.cmake에 정의된 slicerMacroBuildLoadableModule 매크로 실행  
-# 모듈을 Slicer에서 시영힐 수 있도록 library, header 등 전달, 설치해주는 매크로  
+# 모듈을 3D Slicer로 등록하여 빌드할 수 있도록 library, header 등 전달, 설치해주는 매크로  
 slicerMacroBuildLoadableModule(
   NAME ${MODULE_NAME}
   TITLE ${MODULE_TITLE}
