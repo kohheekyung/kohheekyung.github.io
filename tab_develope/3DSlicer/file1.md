@@ -74,7 +74,7 @@ cmake --build . --config Debug
 <summary>'현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다'라는 Warning</summary>
 <div markdown="1">
 
-- LibArchive 빌드시 '현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다'라는 Warning와 함께 빌드 실패  
+LibArchive 빌드시 발생한다.
 ```
 1>Performing build step for 'LibArchive'
 1>.NET Framework용 Microsoft (R) Build Engine 버전 16.9.0+5e4b48a27
