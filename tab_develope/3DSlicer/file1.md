@@ -70,6 +70,9 @@ cmake --build . --config Debug
 ```   
 
 ##### Build 오류 잡기
+<details>
+<summary>'현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다'라는 Warning</summary>
+<div markdown="1">
 
 - LibArchive 빌드시 '현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다'라는 Warning와 함께 빌드 실패  
 ```
@@ -98,6 +101,11 @@ Visual Studio로 열고, 해당 파일을 다른 이름으로 파일 저장하�
 
 
 
+
+
+
+</div>
+</details>
 
 
 
