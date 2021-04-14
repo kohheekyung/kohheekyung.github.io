@@ -72,7 +72,7 @@ cmake --build . --config Debug
 ##### Build 오류 잡기  
 
 - LinArchive  
-- 
+- SimpleITK
 
 <details>
 <summary> warning C4819 </summary>
@@ -101,9 +101,20 @@ build 디렉토리\LibArchive\libarchive\archive_read_support_format_rar5.c 에�
 동일한 에러가 계속난다면, 해당파일을   
 Visual Studio로 열고, 해당 파일을 다른 이름으로 파일 저장하기 > 저장 드롭다운 > 고급저장 옵션 > 인코딩을 유니코드 -코드 페이지 1200로 변경하여 저장하면된다.   
 
-
-
-
+SimpleITK 빌드시 '현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다'라는 Warning과 함께 빌드 실패한다.  
+```
+D:\slicer_project\R\ITK\Modules\Filtering\Smoothing\include\itkRecursiveGaussianImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
+1>D:\slicer_project\R\ITK\Modules\Filtering\ImageFilterBase\include\itkRecursiveSeparableImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
+1>D:\slicer_project\R\ITK\Modules\Filtering\ImageFilterBase\include\itkRecursiveSeparableImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
+1>D:\slicer_project\R\ITK\Modules\Filtering\Smoothing\include\itkRecursiveGaussianImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
+1>    sitkImageRegistrationMethod_CreateOptimizer.cxx
+1>    sitkImageRegistrationMethod_CreateMetric.cxx
+1>D:\slicer_project\R\ITK\Modules\Filtering\Smoothing\include\itkRecursiveGaussianImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
+1>D:\slicer_project\R\ITK\Modules\Filtering\ImageFilterBase\include\itkRecursiveSeparableImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
+1>D:\slicer_project\R\ITK\Modules\Filtering\ImageFilterBase\include\itkRecursiveSeparableImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
+1>D:\slicer_project\R\ITK\Modules\Filtering\Smoothing\include\itkRecursiveGaussianImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
+1
+```
 
 
 
