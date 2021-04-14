@@ -115,7 +115,8 @@ D:\slicer_project\R\ITK\Modules\Filtering\Smoothing\include\itkRecursiveGaussian
 1>D:\slicer_project\R\ITK\Modules\Filtering\Smoothing\include\itkRecursiveGaussianImageFilter.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\SimpleITK-build\SimpleITK-build\Code\Registration\src\SimpleITKRegistration.vcxproj] [D:\slicer_project\R\SimpleITK-build\SimpleITK.vcxproj]
 1
 ```
-
+__해결법__  
+ITK source 파일의 인코딩 문제이기때문에, 수정 후 ITK 빌드 후 SimpliITK 빌드해주면 된다.
 
 
 
