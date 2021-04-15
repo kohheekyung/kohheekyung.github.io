@@ -120,6 +120,47 @@ ITK source 파일의 인코딩 문제이기때문에, 수정 후 ITK 빌드 후 
 
 
 
+
+
+
+
+D:\slicer_project\R\CTK-build\CMakeExternals\Install\include\PythonQt\PythonQtClassWrapper.h(66,16): warning C5208: typ
+edef 이름에 사용되는 명명되지 않은 클래스가 비정적 데이터 멤버, 멤버 열거형 또는 멤버 클래스 이외의 멤버를 선언할 수 없 습니다. [D:\slicer_project\R\Slicer-build\E\DataSto
+re\DataStore\Widgets\qSlicerDataStoreModuleWidgetsPythonQt.vcxproj] [D:\slicer_project\R\Slicer.vcxproj]
+    osm_qSlicerDataStoreModuleWidgets_module_init.cpp
+D:\slicer_project\R\CTK-build\CMakeExternals\Install\include\PythonQt\PythonQtClassWrapper.h(66,16): warning C5208: typ
+edef 이름에 사용되는 명명되지 않은 클래스가 비정적 데이터 멤버, 멤버 열거형 또는 멤버 클래스 이외의 멤버를 선언할 수 없 습니다. [D:\slicer_project\R\Slicer-build\E\DataSto
+re\DataStore\Widgets\qSlicerDataStoreModuleWidgetsPythonQt.vcxproj] [D:\slicer_project\R\Slicer.vcxproj]
+    moc_osm_qSlicerDataStoreModuleWidgets.cpp
+    코드를 생성하고 있습니다...
+       D:/slicer_project/R/Slicer-build/lib/Slicer-4.13/qt-loadable-modules/Release/qSlicerDataStoreModuleWidgetsPython
+  Qt.lib 라이브러리 및 D:/slicer_project/R/Slicer-build/lib/Slicer-4.13/qt-loadable-modules/Release/qSlicerDataStoreModuleWid
+  getsPythonQt.exp 개체를 생성하고 있습니다.
+    qSlicerDataStoreModuleWidgetsPythonQt.vcxproj -> D:\slicer_project\R\Slicer-build\lib\Slicer-4.13\qt-loadable-modul
+  es\Release\qSlicerDataStoreModuleWidgetsPythonQt.pyd
+    vtkSlicerMarkupsModuleMRML.vcxproj -> D:\slicer_project\R\Slicer-build\lib\Slicer-4.13\qt-loadable-modules\Release\
+  vtkSlicerMarkupsModuleMRML.dll
+    vtkSlicerDynamicModelerModuleMRML.vcxproj -> D:\slicer_project\R\Slicer-build\lib\Slicer-4.13\qt-loadable-modules\R
+  elease\vtkSlicerDynamicModelerModuleMRML.dll
+    For vtkSlicerDynamicModelerModuleLogic - updating vtkSlicerDynamicModelerModuleLogicHierarchy.txt
+    Building Custom Rule D:/slicer_project/R/SurfaceToolbox/DynamicModeler/Logic/CMakeLists.txt
+    vtkImplicitPolyDataPointDistance.cxx
+    vtkSlicerDynamicModelerAppendTool.cxx
+D:\slicer_project\Slicer\Modules\Loadable\Markups\MRML\vtkMRMLMarkupsCurveNode.h(1,1): warning C4819: 현재 코드 페이지(949)에서
+표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\Slicer-build\E\SurfaceToolbox\
+DynamicModeler\Logic\vtkSlicerDynamicModelerModuleLogic.vcxproj] [D:\slicer_project\R\Slicer.vcxproj]
+    vtkSlicerDynamicModelerBoundaryCutTool.cxx
+D:\slicer_project\Slicer\Modules\Loadable\Markups\MRML\vtkMRMLMarkupsCurveNode.h(1,1): warning C4819: 현재 코드 페이지(949)에서
+표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\Slicer-build\E\SurfaceToolbox\
+DynamicModeler\Logic\vtkSlicerDynamicModelerModuleLogic.vcxproj] [D:\slicer_project\R\Slicer.vcxproj]
+    vtkSlicerDynamicModelerCurveCutTool.cxx
+D:\slicer_project\Slicer\Modules\Loadable\Markups\MRML\vtkMRMLMarkupsCurveNode.h(1,1): warning C4819: 현재 코드 페이지(949)에서
+표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. [D:\slicer_project\R\Slicer-build\E\SurfaceToolbox\
+DynamicModeler\Logic\vtkSlicerDynamicModelerModuleLogic.vcxproj] [D:\slicer_project\R\Slicer.vcxproj]
+
+
+
+
 </div>
 </details>
 
